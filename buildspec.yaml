@@ -5,6 +5,8 @@ env:
         S3_BUCKET: "crabshack.com"
 phases:
     install:
+      runtime-versions:
+        nodejs: 8
         commands:
         # Download and Install NodeJS 8.0
         - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
