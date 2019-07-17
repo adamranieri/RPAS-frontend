@@ -10,6 +10,7 @@ phases:
       commands:
       - echo "hello"
       - npm install -g @angular/cli
+      - npm install --save-dev @angular-devkit/build-angular
       - echo "end install"
       - ng build
       - echo "built"
