@@ -9,6 +9,8 @@ phases:
         nodejs: 8
       commands:
       - echo "hello"
+      - npm install -g @angular/cli
+      - echo "end install"
 
 build:
         commands:
