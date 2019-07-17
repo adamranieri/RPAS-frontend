@@ -14,4 +14,4 @@ phases:
       - ls -a
 artifacts:
   files:
-    - dist
+    - buildspec.yaml
