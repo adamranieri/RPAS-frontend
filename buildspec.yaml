@@ -13,6 +13,7 @@ phases:
       - echo "end install"
       - ng build
       - echo "built"
+      - ls -a
 
 build:
   commands:
