@@ -12,3 +12,6 @@ phases:
       - ng build
       - echo "built"
       - ls -a
+artifacts:
+  files:
+    - dist
