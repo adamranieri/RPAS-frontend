@@ -16,6 +16,4 @@ phases:
       - ls -a
 artifacts:
   files:
-    - buildspec.yaml
-    - dist/RPAS
-    - '**/*'
+    - 'dist/*'
