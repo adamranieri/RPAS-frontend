@@ -12,7 +12,7 @@ phases:
       - ng build
       - echo "built"
       - ls -a
-      - cd dist
+      - cd dist/RPAS
       - ls -a
 artifacts:
   files:
