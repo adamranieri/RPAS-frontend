@@ -16,4 +16,4 @@ phases:
       - ls -a
 artifacts:
   files:
-    - e2e
+    - ./dist
