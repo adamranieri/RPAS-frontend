@@ -12,6 +12,8 @@ phases:
       - ng build
       - echo "built"
       - ls -a
+      - cd dist
+      - ls -a
 artifacts:
   files:
     - buildspec.yaml
