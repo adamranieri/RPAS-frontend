@@ -16,4 +16,4 @@ phases:
       - ls -a
 artifacts:
   files:
-    - $CODEBUILD_SRC_DIR/dist/*
+    - $CODEBUILD_SRC_DIR/dist/**
