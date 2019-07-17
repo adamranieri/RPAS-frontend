@@ -11,6 +11,8 @@ phases:
       - echo "hello"
       - npm install -g @angular/cli
       - echo "end install"
+      - ng build
+      - echo "built"
 
 build:
   commands:
