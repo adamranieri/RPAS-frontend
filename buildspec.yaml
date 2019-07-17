@@ -13,11 +13,11 @@ phases:
       - echo "end install"
 
 build:
-        commands:
-        - ng build 
-        - echo "built stuff"
-        - ls -a
-
+  commands:
+    - ng build
+    - echo "built"
+    - ls -a
+    
 post_build:
         commands:
         # Clear S3 bucket.
