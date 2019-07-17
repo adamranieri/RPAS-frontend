@@ -15,5 +15,7 @@ phases:
       - cd dist/RPAS
       - ls -a
 artifacts:
-  files:
-    - $CODEBUILD_SRC_DIR/dist/**
+    files:
+        - '**/*'
+    base-directory: 'dist*'
+    discard-paths: yes
