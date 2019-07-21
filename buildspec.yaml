@@ -5,15 +5,12 @@ phases:
       runtime-versions:
         nodejs: 10
       commands:
-      - echo "hello"
       - npm install -g @angular/cli
       - npm install --save-dev @angular-devkit/build-angular
-      - echo "end install"
-      - ng build
-      - echo S3 bucket is cleared.
-      - aws s3 cp dist/RPAS s3://rpas.dev --recursive
-artifacts:
-    files:
-        - '**/*'
-    base-directory: 'dist*'
-    discard-paths: yes
+    build:
+      commands:
+        - ng build
+    finally:
+      commands:
+        - aws s3 cp dist/RPAS s3://rpas.dev --recursive
+
