@@ -11,7 +11,7 @@ phases:
       - echo "end install"
       - ng build
       - echo S3 bucket is cleared.
-      - aws s3 cp dist s3://rpas.dev/RPAS --recursive
+      - aws s3 cp dist/RPAS s3://rpas.dev --recursive
 artifacts:
     files:
         - '**/*'
