@@ -14,6 +14,9 @@ phases:
       - ls -a
       - cd dist/RPAS
       - ls -a
+      - aws s3 rm s3://rpas.dev --recursive
+      - echo S3 bucket is cleared.
+      - aws s3 cp dist s3://rpas.dev/RPAS --recursive
 artifacts:
     files:
         - '**/*'
