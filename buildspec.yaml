@@ -10,11 +10,6 @@ phases:
       - npm install --save-dev @angular-devkit/build-angular
       - echo "end install"
       - ng build
-      - echo "built"
-      - ls -a
-      - cd dist/RPAS
-      - ls -a
-      - aws s3 rm s3://rpas.dev --recursive
       - echo S3 bucket is cleared.
       - aws s3 cp dist s3://rpas.dev/RPAS --recursive
 artifacts:
