@@ -12,5 +12,5 @@ phases:
         - ng build
     post_build:
       commands:
-        - aws s3 cp dist/RPAS s3://rpas.dev --recursive
+        - aws s3 cp dist/RPAS s3://adampointforce --recursive
 
